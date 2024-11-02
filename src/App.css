@@ -1,16 +1,75 @@
-header, footer {
-  background-color: #333;
+header {
+  background-color: #a0af30;
   color: white;
   text-align: center;
-  padding: 1rem;
+  /* position: fixed; */
+  /* padding: 1rem; */
+}
+.container {
+  margin: auto;
+  padding: 10px;
 }
 
-nav a {
+.logo {
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  /* border: 3px solid #ffffff; */
+  background-color: #f1eee9;
+  padding: 6px;
+  
+}
+
+nav a,h1 a {
   margin: 0 1rem;
   color: white;
   text-decoration: none;
 }
+.home_link{
+  display: inline-flex;
+  align-items: center;
+}
 
 main {
   padding: 2rem;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  bottom:0;
+  width: 100%; 
+}
+.image-links {
+  display: flex;
+  justify-content: space-between; /* Space out the items evenly */
+  align-items: center; /* Align items vertically centered */
+  margin-top: 20px;
+  padding: 0 20px; /* Optional: add padding on the left and right for better spacing */
+}
+
+.image-link {
+  flex: 1; /* Allow each item to grow equally */
+  text-align: center; /* Center text under the images */
+}
+
+.image-link a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+
+.image-links img {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.image-link span {
+  display: block; /* Make the title a block element */
+  margin-top: 5px; /* Add some spacing between the image and the title */
+  font-weight: bold; /* Make the title bold */
+  color: #333; /* Change the color as needed */
 }
