@@ -6,7 +6,7 @@ import statusImage from '../images/status_image.png';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='body_text'>
       <h2>Welcome to H.E.L.M.</h2>
       <p>
   H.E.L.M. (Hostel Environment & Living Management) is an initiative dedicated to enhancing the hostel living experience by providing students with a secure, anonymous platform to voice their concerns, share suggestions, and contribute to meaningful improvements in their living environment. Inspired by the idea of creating a safe space similar to a command center, H.E.L.M. empowers students to act as advocates for positive change, ensuring their feedback is heard and acted upon.
@@ -20,7 +20,7 @@ const HomePage = () => {
     <h2>Choose the appropriate option:</h2>
     <div className="image-links">
         <div className="image-link">
-          <a href="/login">
+          <a href="/loginSignup">
             <img src={signInImage} alt="Sign In" />
             <span>Sign In</span>
           </a>
