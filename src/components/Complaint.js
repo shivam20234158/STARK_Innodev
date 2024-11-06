@@ -58,7 +58,7 @@ const ComplaintForm = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="rollNumber">Roll Number (Optional):</label>
+          <label htmlFor="rollNumber">Registration Number (Optional):</label>
           <input
             type="text"
             id="rollNumber"
