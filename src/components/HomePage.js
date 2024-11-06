@@ -17,7 +17,7 @@ const HomePage = () => {
   
   With H.E.L.M., we aim to build a community-centered hostel life, promoting transparency, accountability, and continuous improvement to ensure a harmonious, enriching living experience for all.
 </p>
-    <h2>Choose the appropriate option:</h2>
+    <h2 color='jnnd'>Choose the appropriate option:</h2>
     <div className="image-links">
         <div className="image-link">
           <a href="/loginSignup">
@@ -26,9 +26,9 @@ const HomePage = () => {
           </a>
         </div>
         <div className="image-link">
-          <a href="/feedback">
-            <img src={feedbackImage} alt="Feedback" />
-            <span>Feedback</span>
+          <a href="/complaint">
+            <img src={feedbackImage} alt="Complaint" />
+            <span>Feedback and Complain</span>
           </a>
         </div>
         <div className="image-link">
