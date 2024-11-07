@@ -6,11 +6,14 @@ import Footer from "./components/Footer";
 import HomePage from "./components/HomePage";
 import LoginSignup from './components/LoginSignup';
 import Complaint from './components/Complaint';
+import React from "react";
 
 function App() {
   return (
     <Router>
       <Header />
+      
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/loginSignup" element={<LoginSignup />} />
@@ -22,6 +25,3 @@ function App() {
 }
 
 export default App;
-
-//my name is raunak 
-//jvsnj

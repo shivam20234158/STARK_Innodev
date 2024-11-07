@@ -1,10 +1,26 @@
+/* Fullscreen background video */
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit:cover;
+  z-index: -1;
+}
+
+
 header {
-  background-color: #a0af30;
+  /* background-color: #a0af30; */
   color: white;
   text-align: center;
-  /* position: fixed; */
-  /* padding: 1rem; */
+
+  
 }
+
+
+
+
 .container {
   margin: auto;
   padding: 10px;
@@ -16,23 +32,29 @@ header {
   width: 60px;
   height: auto;
   border-radius: 50%;
-  /* border: 3px solid #ffffff; */
   background-color: #f1eee9;
   padding: 6px;
-  
-}
-.body_text{
-  margin: 10px;
-  /* background-color: rgb(129, 232, 232); */
 }
 
+.body_text {
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+  max-width: 80%;
+  color: #f1eee9;
+  margin: auto;
+  margin-top: 10px;
 
-nav a,h1 a {
+  text-shadow: none;
+}
+
+nav a, h1 a {
   margin: 0 1rem;
   color: white;
   text-decoration: none;
 }
-.home_link{
+
+.home_link {
   display: inline-flex;
   align-items: center;
 }
@@ -40,136 +62,157 @@ nav a,h1 a {
 main {
   padding: 2rem;
 }
+
 footer {
-  background-color: #61a2a7;
+  /* background-color: #61a2a7; */
   color: white;
   text-align: center;
   padding: 20px 0;
-  bottom:0;
-  width: 100%; 
+  width: 100%;
 }
+
 .image-links {
   display: flex;
-  justify-content: space-between; /* Space out the items evenly */
-  align-items: center; /* Align items vertically centered */
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
-  padding: 0 20px; /* Optional: add padding on the left and right for better spacing */
+  padding: 0 20px;
 }
 
 .image-link {
-  flex: 1; /* Allow each item to grow equally */
-  text-align: center; /* Center text under the images */
+  flex: 1;
+  text-align: center;
 }
 
-.image-link a {
-  text-decoration: none; /* Remove underline from links */
-  color: inherit; /* Inherit color from parent */
-}
-
-.image-links img {
-  width: 200px; /* Adjust size as needed */
+.image-link img {
+  width: 200px;
   height: auto;
   cursor: pointer;
 }
 
 .image-link span {
-  display: block; /* Make the title a block element */
-  margin-top: 5px; /* Add some spacing between the image and the title */
-  font-weight: bold; /* Make the title bold */
-  color: #333; /* Change the color as needed */
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #f1f1f1;
 }
-.container2{
+/* Background styling for LoginSignup page */
+.login-signup-background {
+  background-image: url('./images/login_back.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures full page height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container2 {
   display: flex;
   flex-direction: column;
   width: 600px;
-  margin: auto;
-  margin-top:20px;
+  margin: 20px auto;
   background: #fff;
-  margin-bottom: 20px;
   padding-bottom: 30px;
 }
-.header2{
+
+.header2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 9px;
   width: 100%;
-  margin-top:30px;
+  margin-top: 30px;
 }
-.text{
+
+.text {
   color: #3c009d;
   font-size: 48px;
   font-weight: 700;
 }
-.underline{
+
+.underline {
   width: 61px;
-  height:6px;
-  background:#3c009d ;
+  height: 6px;
+  background: #3c009d;
   border-radius: 9px;
 }
-.inputs{
+
+.inputs {
   margin-top: 55px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.input{
+
+.input {
   display: flex;
   align-items: center;
   margin: auto;
   width: 480px;
-  height:80px;
+  height: 80px;
   background: #f1eee9;
   border-radius: 6px;
 }
-.input img{
-  margin: 0px 30px;
+
+.input img {
+  margin: 0 30px;
 }
-.input input{
+
+.input input {
   height: 50px;
-  width:400px;
+  width: 400px;
   background: transparent;
   border: none;
-  outline:none;
-  color:#797979;
+  outline: none;
+  color: #797979;
   font-size: 19px;
 }
-.forgot-password{
+
+.forgot-password {
   padding-left: 62px;
-  margin-top:27px;
+  margin-top: 27px;
   color: #797979;
   font-size: 18px;
 }
-.forgot-password span{
+
+.forgot-password span {
   color: #3c009d;
-  cursor:pointer;
+  cursor: pointer;
 }
-.submit-container{
+
+.submit-container {
   display: flex;
   gap: 30px;
-  margin:60px auto;
+  margin: 60px auto;
 }
-.submit{
+
+.submit {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
   height: 59px;
-  color:#fff ;
+  color: #fff;
   background: #3c009d;
   border-radius: 50px;
   font-size: 19px;
   font-weight: 700;
   cursor: pointer;
 }
-.gray{
+
+.gray {
   background: #f1eee9;
   color: #797979;
 }
+
 .complaint-form {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto;
+  background-color: #f2f9de;
+  margin: 30px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -178,6 +221,7 @@ footer {
 
 .complaint-form h2 {
   text-align: center;
+  color: #020202;
   margin-bottom: 20px;
 }
 
